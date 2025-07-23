@@ -1,0 +1,63 @@
+*{
+    padding: 0;
+    margin: 0;
+
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    text-align: center;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 100px;
+}
+
+.calciBox {
+    display: inline-block;
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+#display {
+    width: 100%;
+    height: 50px;
+    font-size: 20px;
+    margin-bottom: 15px;
+    text-align: right;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid black;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 60px);
+    gap: 10px;
+    justify-content: center;
+}
+
+button {
+    padding: 15px;
+    font-size: 18px;
+    border: none;
+    background-color: #e6e6e6;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: #d4d4d4;
+}
+
+#display::placeholder{
+    color: black;
+}
